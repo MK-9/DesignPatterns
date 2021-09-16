@@ -1,6 +1,6 @@
-package component;
+package Mediator.component;
 
-import main.Mediator;
+import Mediator.main.Mediator;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -9,11 +9,11 @@ import java.awt.event.ActionEvent;
  * Concrete components don't talk with each other. They have only one
  * communication channel–sending requests to the mediator.
  */
-public class SaveButton extends JButton implements Component {
+public class DeleteButton extends JButton  implements Component {
     private Mediator mediator;
 
-    public SaveButton() {
-        super("Save");
+    public DeleteButton() {
+        super("Del");
     }
 
     @Override
@@ -23,11 +23,11 @@ public class SaveButton extends JButton implements Component {
 
     @Override
     protected void fireActionPerformed(ActionEvent actionEvent) {
-        mediator.saveChanges();
+        mediator.deleteNote();
     }
 
     @Override
     public String getName() {
-        return "SaveButton";
+        return "DelButton";
     }
 }

@@ -1,7 +1,7 @@
-package component;
+package Mediator.component;
 
-import main.Mediator;
-import model.Note;
+import Mediator.main.Mediator;
+import Mediator.model.Note;
 
 import javax.swing.*;
 

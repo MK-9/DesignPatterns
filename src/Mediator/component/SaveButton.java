@@ -1,16 +1,20 @@
-package component;
+package Mediator.component;
 
-import main.Mediator;
+import Mediator.main.Mediator;
 
 import javax.swing.*;
-import java.awt.event.KeyEvent;
+import java.awt.event.ActionEvent;
 
 /**
  * Concrete components don't talk with each other. They have only one
  * communication channel–sending requests to the mediator.
  */
-public class Title extends JTextField implements Component {
+public class SaveButton extends JButton implements Component {
     private Mediator mediator;
+
+    public SaveButton() {
+        super("Save");
+    }
 
     @Override
     public void setMediator(Mediator mediator) {
@@ -18,12 +22,12 @@ public class Title extends JTextField implements Component {
     }
 
     @Override
-    protected void processComponentKeyEvent(KeyEvent keyEvent) {
-        mediator.markNote();
+    protected void fireActionPerformed(ActionEvent actionEvent) {
+        mediator.saveChanges();
     }
 
     @Override
     public String getName() {
-        return "Title";
+        return "SaveButton";
     }
 }

@@ -1,6 +1,6 @@
-package component;
+package Mediator.component;
 
-import main.Mediator;
+import Mediator.main.Mediator;
 
 public interface Component {
     void setMediator(Mediator mediator);

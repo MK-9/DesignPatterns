@@ -1,10 +1,10 @@
-package dialog;
+package Mediator.dialog;
 
-import component.*;
-import component.Component;
-import component.List;
-import main.Mediator;
-import model.Note;
+import Mediator.component.*;
+import Mediator.component.Component;
+import Mediator.component.List;
+import Mediator.main.Mediator;
+import Mediator.model.Note;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;

@@ -1,6 +1,6 @@
-package component;
+package Mediator.component;
 
-import main.Mediator;
+import Mediator.main.Mediator;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
  * Concrete components don't talk with each other. They have only one
  * communication channel–sending requests to the mediator.
  */
-public class TextBox extends JTextArea implements Component {
+public class Title extends JTextField implements Component {
     private Mediator mediator;
 
     @Override
@@ -24,6 +24,6 @@ public class TextBox extends JTextArea implements Component {
 
     @Override
     public String getName() {
-        return "TextBox";
+        return "Title";
     }
 }

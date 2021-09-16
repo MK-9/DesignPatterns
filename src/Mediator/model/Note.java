@@ -1,4 +1,4 @@
-package model;
+package Mediator.model;
 
 public class Note {
     private String name;

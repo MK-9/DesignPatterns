@@ -1,6 +1,8 @@
-import component.*;
-import dialog.Editor;
-import main.Mediator;
+package Mediator;
+
+import Mediator.component.*;
+import Mediator.dialog.Editor;
+import Mediator.main.Mediator;
 
 import javax.swing.*;
 
