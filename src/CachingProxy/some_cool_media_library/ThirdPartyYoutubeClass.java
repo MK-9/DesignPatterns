@@ -1,6 +1,6 @@
-package CachingProxy;
+package CachingProxy.some_cool_media_library;
 
-import CachingProxy.Model.Video;
+import CachingProxy.model.Video;
 
 import java.util.HashMap;
 

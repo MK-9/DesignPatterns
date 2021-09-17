@@ -1,4 +1,4 @@
-package CachingProxy.Model;
+package CachingProxy.model;
 
 public class Video {
     private String id;
