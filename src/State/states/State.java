@@ -4,7 +4,7 @@ import State.ui.Player;
 
 public abstract class State {
 
-    private Player player;
+    Player player;
 
     public State(Player player) {
         this.player = player;
