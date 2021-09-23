@@ -2,29 +2,36 @@ package State.states;
 
 import State.ui.Player;
 
-public class LockedState extends State{
+public class LockedState extends State {
 
     public LockedState(Player player) {
         super(player);
+        player.setPlaying(false);
     }
 
     @Override
     public String onLock() {
-        return null;
+        if (player.isPlaying()) {
+            player.changeState(new ReadyState(player));
+            return "Stop playing";
+        } else {
+            return "Locked...";
+        }
     }
 
     @Override
     public String onPlay() {
-        return null;
+        player.changeState(new ReadyState(player));
+        return "Ready";
     }
 
     @Override
     public String onNext() {
-        return null;
+        return "Locked...";
     }
 
     @Override
     public String onPrevious() {
-        return null;
+        return "Locked...";
     }
 }

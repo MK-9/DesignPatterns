@@ -2,7 +2,7 @@ package State.states;
 
 import State.ui.Player;
 
-public class ReadyState extends State{
+public class ReadyState extends State {
 
     public ReadyState(Player player) {
         super(player);
@@ -10,21 +10,24 @@ public class ReadyState extends State{
 
     @Override
     public String onLock() {
-        return null;
+        player.changeState(new LockedState(player));
+        return "Locked...";
     }
 
     @Override
     public String onPlay() {
-        return null;
+        String action = player.startPlayBack();
+        player.changeState(new PlayingState(player));
+        return action;
     }
 
     @Override
     public String onNext() {
-        return null;
+        return "Locked...";
     }
 
     @Override
     public String onPrevious() {
-        return null;
+        return "Locked...";
     }
 }
