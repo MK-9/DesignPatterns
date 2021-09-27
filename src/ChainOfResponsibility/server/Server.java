@@ -27,7 +27,7 @@ public class Server {
      * request to the chain.
      */
     public boolean logIn(String email, String password) {
-        if (middleware.checkNext(email, password)) {
+        if (middleware.check(email, password)) {
             System.out.println("Authorization have been successful!");
 
             // Do something useful here for authorized users.

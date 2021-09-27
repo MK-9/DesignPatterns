@@ -10,7 +10,7 @@ public abstract class Middleware {
     /**
      * Builds chains of middleware objects.
      */
-    public Middleware nextLink(Middleware next) {
+    public Middleware linkWith(Middleware next) {
         this.next = next;
         return next;
     }
