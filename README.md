@@ -29,6 +29,10 @@ These patterns explain how to assemble objects and classes into larger structure
 
 ### Behavioral patterns
 These patterns are concerned with algorithms and the assignment of responsibilities between objects.
+These patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
+| ![](https://refactoring.guru/images/patterns/cards/adapter-mini-2x.png) | ![](https://refactoring.guru/images/patterns/cards/bridge-mini-2x.png) |
+| :---: | :---: |
+| **Adapter** | **Bridge**|
 
 
 
